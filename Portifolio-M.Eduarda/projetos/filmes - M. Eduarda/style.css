@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7B9D7;
+    color: #fff;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 20px;
+    border-top: 1px solid #fff;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script', serif;
+    font-size: 90px;
+    margin-bottom: 10px;
+    color: #ED5C9B;
+}
+
+header h2 {
+    text-align: center;
+    font-family: 'Dancing Script', serif;
+    font-size: 35px;
+    color: #ED5C9B;
+}
+
+header p {
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    max-width: 900px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.galeria {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    height: 280px;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: #ED5C9B;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #F7B9D7;
+    color: #ED5C9B;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+    transition: all 0.3 ease;
+    display: inline-block;
+}
+
+.card a:hover {
+    transform: scale(1.03);
+    background-color: #fff;
+}
+
+.card img {
+    width: 150px;
+    height: 220px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    float: left; 
+    margin: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.card p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.0;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ED5C9B;
+    color: #F7B9D7;
+    font-size: 14px;
+    margin-top: 40px;
+}

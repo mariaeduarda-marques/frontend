@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #928d87;
+    color: #222;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+
+
+.site-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 40px;
+    color: #1f242a;
+    margin-top: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 8px 14px;
+    background: #444;
+    color: #928d87;
+    border-radius: 50px;
+    font-weight: 600;
+    margin: 0 8px;
+    font-size: 15px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    background: #222;
+    color: #fff;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main p {
+    font-size: 1rem;
+    color: #222;
+    background: #ffffffcc;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.page-img {
+    width: 45%;
+    max-width: 420px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+
+.map-wrap {
+    width: 90%;
+    max-width: 900px;
+    height: 300px;
+    margin: 30px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #eaeaea;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.map-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer{
+  text-align:center;
+  margin-top:22px;
+  color:#555;
+  background-color: #222;
+  font-size:15px;
+}
+
+@media (max-width: 720px) {
+
+    .img-dupla {
+        width: 100%;
+        height: 220px;
+    }
+
+    .map-wrap {
+        height: 250px;
+    }
+}

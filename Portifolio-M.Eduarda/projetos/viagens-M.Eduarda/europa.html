@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europa-Viagens</title>
+    <link rel="stylesheet" href="2style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Viagens</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn"><strong>NOSSAS VIAGENS</strong></button>
+
+                    <ul class="dropdown-content">
+                        <li><a href="duda.html">Início</a></li>
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="asia.html">Ásia</a></li>
+                        <li><a href="americasul.html">América do Sul</a></li>
+                        <li><a href="africa.html">África</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>CONTATOS</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div>
+            <h1>Explore a Europa</h1>
+            <p>Descubra destinos incríveis e planeje a viagem dos seus sonhos.</p> 
+        </div>
+
+        <section>
+            <div class="viagens">
+             <div class="card">
+                <img src="img/paris.jpg" alt="Paris">
+                <h3>Paris, França</h3>
+                <p>A cidade luz encanta com sua arquitetura histórica, museus famosos e cafés charmosos.</p>
+            </div>
+
+
+            <div class="card">
+                <img src="img/roma.png" alt="Roma">
+                <h3>Roma, Itália</h3>
+                <p>Conheça o Coliseu, o Vaticano e a deliciosa gastronomia italiana em cada esquina.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/barcelona.png" alt="Barcelona">
+                <h3>Barcelona, Espanha</h3>
+                <p>Arte, cultura e praias incríveis fazem de Barcelona um destino vibrante e inesquecível.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/londres.png" alt="Londres">
+                <h3>Londres, Reino Unido</h3>
+                <p>Uma cidade moderna com tradição, repleta de atrações culturais e pontos turísticos icônicos.</p>
+            </div>
+
+            <div class="mapa-container">
+                <h3>Mapa – Paris</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999046114302!2d2.292292615675948!3d48.85837370792862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fddf1099e19%3A0xabcd123!2sTorre%20Eiffel!5e0!3m2!1spt-BR!2sbr!4v1700000000001"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="mapa-container">
+                <h3>Mapa – Roma</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.150232747668!2d12.492230315571658!3d41.89021417922111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61a9e4c2e6df%3A0x8c06b2a3ef245f!2sColiseu!5e0!3m2!1spt-BR!2sbr!4v1700000000002"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="mapa-container">
+                <h3>Mapa – Barcelona</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.1546407015087!2d2.173403315572339!3d41.40362927926365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f31e1c2b1b%3A0xced7c89b2d1e!2sSagrada%20Fam%C3%ADlia!5e0!3m2!1spt-BR!2sbr!4v1700000000003"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                 </iframe>
+            </div>
+
+            <div class="mapa-container">
+                <h3>Mapa – Londres</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19801.64592748455!2d-0.1262733!3d51.5033991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c3c0c57035%3A0xdf9ebe5d1a6d!2sLondon%20Eye!5e0!3m2!1spt-BR!2sbr!4v1700000000004"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+       <p>@2025-Projeto desenvolvido por Maria Eduarda Marques</p> 
+    </footer>
+
+    <script>
+        const btn = document.querySelector(".dropbtn");
+        const menu = document.querySelector(".dropdown-content");
+
+        btn.addEventListener("click", (event) => {
+        event.stopPropagation(); 
+        menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

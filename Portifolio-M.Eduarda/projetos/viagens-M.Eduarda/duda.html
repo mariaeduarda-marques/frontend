@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Viagens</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn"><strong>NOSSAS VIAGENS</strong></button>
+
+                    <ul class="dropdown-content">
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="asia.html">Ásia</a></li>
+                        <li><a href="americasul.html">América do Sul</a></li>
+                        <li><a href="africa.html">África</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>CONTATOS</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="card">
+            <img src="img/europaa.png" alt="" class="card-image">
+            <div class="card-body">
+                <h2>Europa</h2>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/asia.png" alt="" class="card-image">
+            <div class="card-body">
+                <h2>Ásia</h2>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/americasul.png" alt="" class="card-image">
+            <div class="card-body">
+                <h2>América do Sul</h2>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img/africa.png" alt="" class="card-image">
+            <div class="card-body">
+                <h2>África</h2>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+       <p>@2025-Projeto desenvolvido por Maria Eduarda Marques</p> 
+    </footer>
+
+    <script>
+        const btn = document.querySelector(".dropbtn");
+        const menu = document.querySelector(".dropdown-content");
+
+        btn.addEventListener("click", (event) => {
+        event.stopPropagation(); 
+        menu.classList.toggle("show");
+        });
+    </script>
+
+</body>
+</html>

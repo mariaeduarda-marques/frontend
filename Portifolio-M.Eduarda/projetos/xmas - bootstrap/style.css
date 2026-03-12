@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f2efe6;
+    color: #333;
+}
+
+header {
+    background: #b30000;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 160px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: #b30000;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #ffe6e6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.banner {
+    text-align: center;
+    background: url(img/christmas.png) center/cover no-repeat;
+    padding: 120px 20px;
+    color: white;
+}
+
+.banner h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel de Imagens</title>
+  <link rel="stylesheet" href="duda.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="duda.css">
+</head>
+<body>
+  <header>
+    <nav class="categorias">
+      <div>
+        <a href="#">Início</a>
+        <a href="#">Jogo 1</a>
+        <a href="#">Jogo 2</a>
+        <a href="#">Jogo 3</a>
+        <a href="#">Jogo 4</a>
+        <a href="#">Jogo 5</a>
+        <a href="#">Sobre</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/residentevil.png" class="d-block w-100" alt="Imagem 1">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/thelastofus.png" class="d-block w-100" alt="Imagem 2">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/deadspace.png" class="d-block w-100" alt="Imagem 3">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/silenthill.png" class="d-block w-100" alt="Imagem 4">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/evilwithin.png" class="d-block w-100" alt="Imagem 5">
+        </div>
+      </div>
+
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"></button>
+      </div>
+    </div>
+  </main>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

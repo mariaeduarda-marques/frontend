@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ásia-Viagens</title>
+    <link rel="stylesheet" href="2style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Viagens</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn"><strong>NOSSAS VIAGENS</strong></button>
+
+                    <ul class="dropdown-content">
+                        <li><a href="duda.html">Início</a></li>
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="asia.html">Ásia</a></li>
+                        <li><a href="americasul.html">América do Sul</a></li>
+                        <li><a href="africa.html">África</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>CONTATOS</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<main class="container">
+    <div>
+        <h1>Explore a Ásia</h1>
+        <p>Descubra culturas únicas, paisagens impressionantes e destinos inesquecíveis.</p> 
+    </div>
+
+    <section>
+        <div class="viagens">
+            <div class="card">
+                <img src="img/tokyo.png" alt="Tóquio">
+                <h3>Tóquio, Japão</h3>
+                <p>Tecnologia avançada, tradição milenar e cultura vibrante em uma só cidade.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/pequim.png" alt="Pequim">
+                <h3>Pequim, China</h3>
+                <p>A mistura perfeita entre história imperial, cultura e arquitetura fascinante.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/seul.png" alt="Seul">
+                <h3>Seul, Coreia do Sul</h3>
+                <p>Uma cidade moderna, rica em cultura pop, gastronomia e tradições antigas.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/bangkok.png" alt="Bangkok">
+                <h3>Bangkok, Tailândia</h3>
+                <p>Templos deslumbrantes, mercados flutuantes e comida de rua incrível.</p>
+            </div>
+
+             <div class="mapa-container">
+                <h3>Mapa – Tóquio</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414283.7170658788!2d139.4460018!3d35.6735404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b88ea5a7b09%3A0xacf6f1e1d55d26ab!2sT%C3%B3quio%2C%20Jap%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1700000000005"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="mapa-container">
+                <h3>Mapa – Pequim</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32639462.748254027!2d83.5217903!3d39.9097367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f19fcce9401b5f%3A0x3a8bf15c693ac12b!2sPequim%2C%20China!5e0!3m2!1spt-BR!2sbr!4v1700000000006"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+             <div class="mapa-container">
+                <h3>Mapa – Seul</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0598297331316!2d126.97796971558041!3d37.56653577979886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca28bdfcf9773%3A0x11bdcf5b6dfb98!2sSeul%2C%20Coreia%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1700000000007"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+             <div class="mapa-container">
+                <h3>Mapa – Bangkok</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387638.4549321961!2d100.3560433!3d13.7245601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2990ad4160e29%3A0x40d0ee199a9c!2sBangkok%2C%20Tail%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1700000000008"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+
+    <footer>
+       <p>@2025-Projeto desenvolvido por Maria Eduarda Marques</p> 
+    </footer>
+
+    <script>
+        const btn = document.querySelector(".dropbtn");
+        const menu = document.querySelector(".dropdown-content");
+
+        btn.addEventListener("click", (event) => {
+        event.stopPropagation(); 
+        menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

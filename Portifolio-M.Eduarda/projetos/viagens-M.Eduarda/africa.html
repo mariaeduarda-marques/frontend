@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>África - Viagens</title>
+    <link rel="stylesheet" href="2style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Viagens</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn"><strong>NOSSAS VIAGENS</strong></button>
+                    <ul class="dropdown-content">
+                        <li><a href="duda.html">Início</a></li>
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="asia.html">Ásia</a></li>
+                        <li><a href="americasul.html">América do Sul</a></li>
+                        <li><a href="africa.html">África</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>CONTATOS</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div>
+            <h1>Explore a África</h1>
+            <p>Conheça a natureza selvagem, cultura diversa e paisagens de tirar o fôlego.</p> 
+        </div>
+
+        <section>
+            <div class="viagens">
+
+                
+                <div class="card">
+                    <img src="img/cidadecabo.png" alt="Cidade do Cabo">
+                    <h3>Cidade do Cabo, África do Sul</h3>
+                    <p>Montanhas imponentes, praias lindas e uma cidade cosmopolita vibrante.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/marrocos.png" alt="Marrakech">
+                    <h3>Marrakech, Marrocos</h3>
+                    <p>Mercados coloridos, palácios históricos e a magia do deserto ao redor.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/serengeti.png" alt="Serengeti">
+                    <h3>Serengeti, Tanzânia</h3>
+                    <p>Safáris emocionantes e a vida selvagem em seu habitat natural.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/egito.png" alt="Pirâmides de Gizé">
+                    <h3>Gizé, Egito</h3>
+                    <p>As famosas pirâmides, história milenar e cultura fascinante.</p>
+                </div>
+
+            
+                <div class="mapa-container">
+                    <h3>Mapa – Cidade do Cabo</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.276854017471!2d18.406771715148274!3d-33.92486838065496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc501b6d0f8b01%3A0x9c2d29b8e1a2184d!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1spt-BR!2sbr!4v1700000000014"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="mapa-container">
+                    <h3>Mapa – Marrakech</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.950562422012!2d-8.008700384135347!3d31.629472281361066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaad8b5dcb39c0b%3A0xced5e9b7f9e0f11b!2sMarrakech%2C%20Marrocos!5e0!3m2!1spt-BR!2sbr!4v1700000000015"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            
+                <div class="mapa-container">
+                    <h3>Mapa – Serengeti</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199765.8670714706!2d34.47639929099657!3d-2.332193324346292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1839d2f0f2c78c97%3A0x17b4de8423cfb7b0!2sParque%20Nacional%20Serengeti%2C%20Tanz%C3%A2nia!5e0!3m2!1spt-BR!2sbr!4v1700000000016"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="mapa-container">
+                    <h3>Mapa – Gizé</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.8945299133145!2d31.12904531515459!3d29.97923498191343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458451c3cfae5b5%3A0x9c9e2a13b1c3f8b1!2sGiza%20Pyramids%2C%20Egito!5e0!3m2!1spt-BR!2sbr!4v1700000000017"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <p>@2025-Projeto desenvolvido por Maria Eduarda Marques</p> 
+    </footer>
+
+    <script>
+        const btn = document.querySelector(".dropbtn");
+        const menu = document.querySelector(".dropdown-content");
+
+        btn.addEventListener("click", (event) => {
+        event.stopPropagation(); 
+        menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

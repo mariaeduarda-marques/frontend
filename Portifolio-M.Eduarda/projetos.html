@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Maria Eduarda Marques de Carvalho</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <style>
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        max-width: 1200px;
+        margin: 60px auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        background: #f0ede7;
+        border-radius: 28px;
+        overflow: hidden;
+        transition: 0.3s ease;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .info {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        flex: 1;
+    }
+
+    .info h2 {
+        font-size: 20px;
+        color: #222;
+        font-weight: 600;
+    }
+
+    .info p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.6;
+        flex-grow: 1;
+    }
+
+    .info a {
+        align-self: flex-start;
+        text-decoration: none;
+        background: #e3dac9;
+        color: #333;
+        padding: 8px 18px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        transition: 0.3s ease;
+    }
+
+    .info a:hover {
+        background: #333;
+        color: #fff;
+    }
+
+    audio{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        background:#f0ede7;
+        padding:10px;
+        border-radius:50px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    }
+    </style>
+</head>
+
+<body>
+
+<nav class="categorias">
+    <a href="index.html">Início</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="pessoal.html">Pessoal</a>
+    <a href="academico.html">Acadêmico</a>
+</nav>
+
+<header>
+    <h1>Maria Eduarda Marques de Carvalho</h1>
+    <p>Todos projetos e atividades que desenvolvi até o momento!</p>
+    <p>Todos sites aqui desenvolvidos foram voltados para o aprendizado de HTML e CSS.</p>
+</header>
+
+<main class="galeria">
+
+    <section class="card">
+        <img src="img/Viagens.png" alt="Site de Viagens">
+
+        <div class="info">
+            <h2>Site de Viagens</h2>
+            <p>
+                Desenvolvimento de um site institucional para apresentação de destinos turísticos e pacotes de viagem. O projeto foi estruturado com HTML e CSS, priorizando organização de conteúdo, usabilidade e uma interface limpa.
+            </p>
+            <a href="projetos/viagens-M.Eduarda/duda.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/christmas.png" alt="Site de Vendas-Natal">
+
+        <div class="info">
+            <h2>Site de Vendas-Natal</h2>
+            <p>
+                Desenvolvimento de uma landing page temática para vendas sazonais, utilizando HTML e CSS básico. O projeto focou na organização visual de seções promocionais e em um layout atrativo voltado para conversão.
+            </p>
+            <a href="projetos/xmas - bootstrap/index.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/turismosp.png" alt="Pontos Turísticos-Melhorado">
+
+        <div class="info">
+            <h2>Pontos Turísticos-SP-Melhorado</h2>
+            <p>
+               Desenvolvimento de uma versão aprimorada de site informativo sobre pontos turísticos de São Paulo, com melhorias na hierarquia de conteúdo e na organização visual, visando maior clareza na navegação.
+            </p>
+            <a href="projetos/home-pontos turísticos-Eduarda/index.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/bootstrapjogos.png" alt="Bootstrap de Jogos">
+
+        <div class="info">
+            <h2>Bootstrap de Jogos</h2>
+            <p>
+                Desenvolvimento de um site temático utilizando Bootstrap para criação de interface responsiva. O projeto explorou grid system e componentes prontos para garantir adaptabilidade e organização visual moderna.
+            </p>
+            <a href="projetos/">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/mapaturistico.png" alt="Site de Pontos Turísticos-SP">
+
+        <div class="info">
+            <h2>Site de Pontos Turísticos-SP</h2>
+            <p>
+                Desenvolvimento de um site informativo com foco em aprendizado de iframe e estruturação de conteúdo em seções. A interface foi projetada para ser simples, funcional e de fácil navegação
+            </p>
+            <a href="projetos/home-pontos turisticos/index.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/filmes.png" alt="Site de Catálogo de Filmes">
+
+        <div class="info">
+            <h2>Site de Catálogo de Filmes</h2>
+            <p>
+                Desenvolvimento de um catálogo digital de filmes utilizando HTML e CSS básico, com organização semântica do conteúdo e layout pensado para ser visualmente atrativo e intuitivo para o público-alvo.
+            </p>
+            <a href="projetos/filmes - M. Eduarda/index.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/animais.png" alt="Site de Animais">
+
+        <div class="info">
+            <h2>Site de Animais</h2>
+            <p>
+                Criação de um site contendo uma página inicial com imagens de animais peçonhentos e um menu interativo que direciona a páginas individuais sobre cada espécie. O trabalho teve foco em navegação entre páginas, organização de conteúdo e uso de elementos visuais.
+            </p>
+            <a href="projetos/animais exóticos-Maria Eduarda/index.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <section class="card">
+        <img src="img/GlowSkin.png" alt="Site de Vendas">
+
+        <div class="info">
+            <h2>Site de Vendas</h2>
+            <p>
+                Desenvolvimento de uma página de vendas de produtos, simulando um pequeno e-commerce. O projeto contemplou a estruturação de seções, utilizando integralmente HTML. No projeto foi entregue um layout visualmente limpo e agradável na linguagem.
+            </p>
+            <a href="projetos/e-commerce - Copia/GlowSkin.html">VER PROJETO</a>
+        </div>
+    </section>
+
+    <div>
+        <audio controls autoplay loop>
+            <source src="mp3-mp4/sza.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 - Homepage criado por Maria Eduarda Marques de Carvalho</p>
+</footer>
+
+</body>
+</html>

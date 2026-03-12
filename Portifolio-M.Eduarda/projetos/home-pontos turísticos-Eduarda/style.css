@@ -1,0 +1,122 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin-top: 10px;
+  background:#928d87;
+  color:#222;
+  line-height:1.4;
+}
+
+header{
+  text-align:center;
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+header h1 {
+    font: size 40px;
+    font-family: 'Cinzel Decorative', serif;
+}
+header p {
+  color:#444;
+  margin: 10px;
+  padding: 10px;
+}
+
+.categorias a {
+  text-decoration: none;
+  padding: 8px 14px;
+  background: #444;
+  color: #928d87;
+  border-radius: 50px;
+  font-weight: 600;
+  margin: 0 8px;
+  font-size: 15px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.categorias a:hover {
+  background: #222;
+  color: #fff;
+}
+
+.container{
+  display:flex;
+  flex-wrap:wrap;       
+  gap:20px;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+
+.card{
+  background:#ffffff;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  overflow:hidden;
+  width:clamp(280px, 48%, 520px);
+  display:flex;
+  flex-direction:column;
+}
+
+.card-image{
+  width:100%;
+  height: 300px;
+  object-fit:cover;
+  display:block;
+}
+
+.card-body{
+  padding:14px;
+}
+
+.card-body h2{
+  font-family: 'Cinzel Decorative', serif;
+  margin:0 0 8px 0;
+  font-size:1.1rem;
+  color:#1f242a;
+  text-align: center;
+}
+
+.card-body p{
+  margin:0 0 12px 0;
+  color:#333;
+  font-size:0.95rem}
+
+
+.map-wrap{
+  width:100%;
+  height:220px;
+  border-radius:8px;
+  overflow:hidden;
+  background:#eaeaea;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
+}
+
+.map-wrap iframe{
+  border:0;
+  width:100%;
+  height:100%;
+}
+
+
+footer{
+  text-align:center;
+  margin-top:22px;
+  color:#555;
+  background-color: #222;
+  font-size:15px;
+}
+
+
+@media (max-width:720px){
+  .container{gap:14px}
+  .card{width:100%}
+  .card-image{height:150px}
+  .map-wrap{height:200px}
+}

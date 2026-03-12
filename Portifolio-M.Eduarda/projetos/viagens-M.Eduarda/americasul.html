@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>América do Sul - Viagens</title>
+    <link rel="stylesheet" href="2style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Viagens</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <button class="dropbtn"><strong>NOSSAS VIAGENS</strong></button>
+                    <ul class="dropdown-content">
+                        <li><a href="duda.html">Início</a></li>
+                        <li><a href="europa.html">Europa</a></li>
+                        <li><a href="asia.html">Ásia</a></li>
+                        <li><a href="americasul.html">América do Sul</a></li>
+                        <li><a href="africa.html">África</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><strong>CONTATOS</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div>
+            <h1>Explore a América do Sul</h1>
+            <p>Descubra paisagens incríveis, cultura vibrante e destinos inesquecíveis.</p> 
+        </div>
+
+        <section>
+            <div class="viagens">
+
+                
+                <div class="card">
+                    <img src="img/rio.png" alt="Rio de Janeiro">
+                    <h3>Rio de Janeiro, Brasil</h3>
+                    <p>Praias deslumbrantes, o Cristo Redentor e uma energia contagiante em cada canto.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/buenosaires.png" alt="Buenos Aires">
+                    <h3>Buenos Aires, Argentina</h3>
+                    <p>Arquitetura europeia, tango, gastronomia incrível e vida cultural intensa.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/machupicchu.png" alt="Machu Picchu">
+                    <h3>Machu Picchu, Peru</h3>
+                    <p>Maravilha histórica e paisagens de tirar o fôlego na Cordilheira dos Andes.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/santiago.png" alt="Santiago">
+                    <h3>Santiago, Chile</h3>
+                    <p>Montanhas imponentes, vinícolas famosas e uma cidade moderna e cultural.</p>
+                </div>
+
+                
+                <div class="mapa-container">
+                    <h3>Mapa – Rio de Janeiro</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.563016401063!2d-43.20937278442921!3d-22.911013584998432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e8a2a24c2%3A0x1a6ed88f5ed3ed17!2sRio%20de%20Janeiro%2C%20RJ%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1700000000009"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="mapa-container">
+                    <h3>Mapa – Buenos Aires</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13113.451111015212!2d-58.4318425!3d-34.6036846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac1f5e2c0%3A0x7f0b8e0d04a8d1f7!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1spt-BR!2sbr!4v1700000000010"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="mapa-container">
+                    <h3>Mapa – Machu Picchu</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.211839847827!2d-72.54496368461847!3d-13.16314169075607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dc8f5d05a5633%3A0x857e2549e9d1d1f0!2sMachu%20Picchu%2C%20Peru!5e0!3m2!1spt-BR!2sbr!4v1700000000013"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="mapa-container">
+                    <h3>Mapa – Santiago</h3>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.887641646313!2d-70.66336318479814!3d-33.448889380771504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf3eacbf5b47%3A0x2562a7ec6a9240b6!2sSantiago%2C%20Chile!5e0!3m2!1spt-BR!2sbr!4v1700000000012"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       <p>@2025-Projeto desenvolvido por Maria Eduarda Marques</p> 
+    </footer>
+
+    <script>
+        const btn = document.querySelector(".dropbtn");
+        const menu = document.querySelector(".dropdown-content");
+
+        btn.addEventListener("click", (event) => {
+        event.stopPropagation(); 
+        menu.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

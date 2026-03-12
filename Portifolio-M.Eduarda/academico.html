@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homepage - Maria Eduarda Marques de Carvalho</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+<style>
+
+.galeria {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;        
+    gap: 30px;              
+    padding: 40px 20px;
+    max-width: 1100px;      
+    margin: 0 auto;         
+}
+
+.card {
+    background-color: #f0ede7;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    transition: 0.3s ease;
+    width: 280px;           
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h1 {
+    font-size: 22px;
+    color: #222;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    font-family: 'Vend Sans';
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #ddd; 
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #444;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background-color: #000;
+}
+
+
+.idiomas{
+    margin-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.idiomas h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: 'Cinzel Decorative';
+}
+
+.idiomas-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.idioma-card{
+    background-color: #f0ede7;
+    padding: 20px 35px;
+    border-radius: 20px;
+    width: 160px;
+    transition: 0.3s;
+}
+
+.idioma-card h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.idioma-card p{
+    font-size: 14px;
+    opacity: 0.8;
+    color: #222;
+}
+
+.idioma-card:hover{
+    transform: translateY(-5px);
+}
+
+audio {
+    display: block;
+    margin: 40px auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="categorias">
+<a href="index.html">Início</a>
+<a href="projetos.html">Projetos</a>
+<a href="pessoal.html">Pessoal</a>
+<a href="academico.html">Acadêmico</a>
+</nav>
+
+<header>
+<h1>Maria Eduarda Marques de Carvalho</h1>
+<p>Página Acadêmica</p>
+<p>Aqui apresento meu histórico acadêmico e atividades relevantes sobre meus três anos de ensino médio.</p>
+</header>
+
+<main class="galeria">
+
+<div class="card">
+<img src="img/1ano.jpeg" alt="1º Ano">
+<h1>1° Ano</h1>
+<a href="1ano.html">Ver</a>
+</div>
+
+<div class="card">
+<img src="img/2ano.jpg" alt="2º Ano">
+<h1>2° Ano</h1>
+<a href="2ano.html">Ver</a>
+</div>
+
+<div class="card">
+<img src="img/3ano.jpg" alt="3º Ano">
+<h1>3° Ano</h1>
+<a href="3ano.html">Ver</a>
+</div>
+
+</main>
+
+
+<section class="idiomas">
+
+<h2>Idiomas</h2>
+
+<div class="idiomas-container">
+
+<div class="idioma-card">
+<h3>Português</h3>
+<p>Nativo</p>
+</div>
+
+<div class="idioma-card">
+<h3>Inglês</h3>
+<p>Fluente</p>
+</div>
+
+<div class="idioma-card">
+<h3>Espanhol</h3>
+<p>Itermediário</p>
+</div>
+
+<div class="idioma-card">
+<h3>Italiano</h3>
+<p>Básico</p>
+
+</div>
+
+<div class="idioma-card">
+<h3>Francês</h3>
+<p>Básico</p>
+</div>
+
+</div>
+
+</section>
+
+
+<audio controls autoplay loop>
+<source src="mp3-mp4/justinyoukon.mp3" type="audio/mp3">
+</audio>
+
+<footer>
+<p>© 2026 - Homepage criado por Maria Eduarda Marques de Carvalho</p>
+</footer>
+
+</body>
+</html>

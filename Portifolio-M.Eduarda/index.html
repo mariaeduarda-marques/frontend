@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Maria Eduarda Marques</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <style>
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.galeria {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.card1, .card4 {
+    background-color: #fbe3e3;
+}
+
+.card2, .card3 {
+    background-color: #f0ede7;
+}
+
+.card h3 {
+    font-family: 'Vend Sans', serif;
+    font-size: 25px;
+    color: #222;
+    padding: 20px;
+    margin: 20px;
+    text-align: justify;
+    align-content: center;
+}
+
+.lateral {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mini-card {
+    background-color: #f0ede7;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.mini-card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.mini-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.mini-card a {
+    color: #8c8c8c;
+}
+
+.mini-card a:hover {
+    color: #333;
+}
+
+.mini-card video {
+    border-radius: 50px;
+    height: 200px;
+    width: 85%;
+}
+
+    </style>
+</head>
+
+<body>
+
+     <nav class="categorias">
+        <a href="index.html">Início</a>
+        <a href="projetos.html" >Projetos</a>
+        <a href="pessoal.html">Pessoal</a>
+        <a href="academico.html">Acadêmico</a>
+    </nav>
+
+    <header>
+        <h1>Maria Eduarda Marques de Carvalho</h1>
+        <p>Quem eu sou?</p>
+    </header>
+
+    <div class="conteudo">
+        <main class="galeria" id="galeria">
+            
+            <section class=" card card1">
+                <img src="img/Duda.png" alt="Maria Eduarda">
+            </section>
+
+            <section class=" card card2">
+                <h3>Apelido: Duda 
+                    <br>Idade: 17 anos
+                    <br>Fluente em Inglês
+                    <br>Interessada em educação,
+                    <br> projetos sociais e 
+                    <br>desenvolvimento pessoal. 
+                </h3>
+            </section>
+
+            <section class="card card3">
+                <h3>Habilidades:
+                    <br>-Comunicação clara
+                    <br>-Organização
+                    <br>-Responsabilidade
+                    <br>-Facilidade para aprender
+                    <br>-Trabalho em grupo.
+                </h3>
+            </section>
+
+            <section class="card card4">
+                <img src="img/maria.png" alt="Maria Eduarda">
+
+            </section>
+        </main>
+
+         <aside class="lateral">
+                <div class="mini-card" id="SobreMim">
+                    <h3>Sobre Mim</h3>
+                    <p>Me chamo Maria Eduarda, sou estudante de Desenvolvimento de Sistemas, onde venho aprendendo a construir e organizar sites com HTML, CSS e JavaScript. Meu objetivo é evoluir constantemente como desenvolvedora e aprimorar minhas habilidades em design e programação web.</p>
+                </div>
+
+                
+                <div class="mini-card">
+                    <h3>CONTATO</h3>
+
+                        <p class="text">Email:</p>
+                            <a href="mailto:mariaeduardamrcarvalho@gmail.com">mariaeduarda.
+                            mrcarvalho@gmail.com</a>
+
+                        <p class="text">WhatsApp:</p>
+                            <a href="https://wa.me/5512981635903" target="_blank">+55 (12) 98163-5903</a>
+
+                        <p class="text">LinkedIn:</p>
+                            <a href="https://linkedin.com/in/maria-eduarda-marques" target="_blank">
+                            linkedin.com/in/maria-eduarda-marques</a>
+
+                        <p class="text">GitHub:</p>
+                            <a href="https://github.com/mariaeduarda-marques" target="_blank">
+                            github.com/mariaeduarda-marques</a>
+
+                        <p class="label">Instagram:</p>
+                            <a href="https://instagram.com/maria.marquesc" target="_blank">
+                            @maria.marquesc</a>        
+                </div>
+
+                <div class="mini-card">
+                   <video controls loop>
+                    <source src="mp3-mp4/videojustin.mp4" type="video/mp4">
+                   </video> 
+
+                </div>
+
+             </div>       
+        </aside>
+
+
+
+    <footer>
+        <p>@ 2026 - Homepage criado por Maria Eduarda Marques de Carvalho</p>
+    </footer>
+
+
+</body>
+</html>
