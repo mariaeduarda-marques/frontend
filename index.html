@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    
+    <title>To-do List - M.Eduarda</title>
+</head>
+<body>
+
+    <h1>To-do List</h1>
+
+    <p id="task-counter">Total de tarefas: 0</p>
+
+    <div class="content">
+
+        <div class="content--add-item">
+            <input 
+                type="text" 
+                id="input-new-task" 
+                placeholder="Digite sua nova tarefa"
+            >
+
+            <button 
+                onclick="newTask()" 
+                id="btn-new-task"
+            >
+                +
+            </button>
+        </div>
+
+        <div class="content--body">
+            <ul id="to-do-list"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
